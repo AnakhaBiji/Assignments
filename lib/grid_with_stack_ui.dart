@@ -13,7 +13,7 @@ class stackview extends StatelessWidget {
     'https://media.istockphoto.com/id/1411386578/photo/sunset-over-calm-sea.jpg?s=612x612&w=0&k=20&c=JWqXdslBVeRj5zQWkacu2LXiR9Z9rKwuicn4NzCuv9g=',
     'https://media.istockphoto.com/id/641093712/photo/sunset-over-indian-ocean.jpg?s=612x612&w=0&k=20&c=ZqjI_JlpKtEHzm9kPe40GXhcDM9BfwT-INUIi68pcGY=',
     'https://images.unsplash.com/photo-1453747063559-36695c8771bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJlYXV0aWZ1bCUyMHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-    'https://media.istockphoto.com/id/1303780600/photo/mothar-mountain-rock-pools.jpg?b=1&s=170667a&w=0&k=20&c=TvjJ0_2AjUi5NtTd-xMLizf22P6-BQ8J8Q60sXU3jnk=',
+    'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYXV0aWZ1bCUyMHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
     'https://media.istockphoto.com/id/1438954277/photo/shoal-bay-aerial.jpg?b=1&s=170667a&w=0&k=20&c=JggKi3qRMC3SIVmBEFNUdBmDy3zzgFfccrlt7Lt8OSY='
   ];
   var names = ['USA', 'ITALY', 'FRANCE', 'GERMANY', 'CANADA'];
@@ -30,7 +30,8 @@ class stackview extends StatelessWidget {
           padding: EdgeInsets.only(left: 10,right: 10,top: 10,),
           child: Stack(
             children: [
-              Card(
+              Container(
+              decoration: BoxDecoration(borderRadius:BorderRadius.circular(20)),
               child: Image(image: NetworkImage(images[index]),),
           ),
               Positioned(
