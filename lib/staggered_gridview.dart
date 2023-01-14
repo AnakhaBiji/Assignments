@@ -70,6 +70,9 @@ class CardUi extends StatelessWidget {
   }
 }
 
+class StaggeredTile {
+}
+
 class Tile extends StatelessWidget {
   final String url;
   final String title;
